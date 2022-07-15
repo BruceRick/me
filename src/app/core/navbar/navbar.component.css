@@ -142,5 +142,6 @@ div#navbarResponsive ul {
     }
     .navbar-brand {
       margin-left: 0px;
+      padding-right: 7.5px !important;
     }
 }
