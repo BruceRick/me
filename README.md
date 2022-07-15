@@ -1,8 +1,8 @@
 # AboutMe
 
-https://brucerick.github.io/About-Me/
+https://brucerick.github.io/me/
 
-Run `ngh --dir dist/About-Me` to deploy
+Run `ngh --dir dist/me` to deploy
 
 # ANGULAR
 
