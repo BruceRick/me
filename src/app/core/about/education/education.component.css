@@ -16,7 +16,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-.education-header {
+.education-content {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: normal;
@@ -25,30 +25,31 @@
     caret-color: transparent;
 }
 
-.tab-content-image {
+.education-tab-content-image {
     flex: 1;
     width: 50%;
     object-fit: cover;
+    object-position: left;
 }
 
-.tab-content-text {
+.education-tab-content-text {
     flex: 1;
     width: 50%;
     padding: 10px 20px;
 }
 
-@media (max-width: 768px) {
-    .education-header {
+@media (max-width: 810px) {
+    .education-content {
         display: block;
     }
     
-    .tab-content-image {
+    .education-tab-content-image {
         flex: 0;
         min-height: 300px;
         width: 100%;
     }
     
-    .tab-content-text {
+    .education-tab-content-text {
         flex: 0;
         width: 100%;
     }
