@@ -1,0 +1,57 @@
+.mat-accordion {
+    padding-top: 100px;
+}
+
+.mat-expansion-panel {
+    background-color: transparent;
+    caret-color: transparent;
+    color: white;
+    border-top-right-radius: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: left;
+}
+
+.mat-expansion-panel-header-title, .mat-expansion-panel-header-description, .mat-expansion-indicator::after {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+}
+
+.employment-content {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    display: flex;
+    text-align: left;
+    caret-color: transparent;
+}
+
+.employment-tab-content-image {
+    flex: 1;
+    width: 50%;
+    object-fit: cover;
+}
+
+.employment-tab-content-text {
+    flex: 1;
+    width: 50%;
+    padding: 10px 20px;
+}
+
+@media (max-width: 810px) {
+    .employment-content {
+        display: block;
+    }
+    
+    .employment-tab-content-image {
+        flex: 0;
+        min-height: 300px;
+        width: 100%;
+    }
+    
+    .employment-tab-content-text {
+        flex: 0;
+        width: 100%;
+    }
+}

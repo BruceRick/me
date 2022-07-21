@@ -12,6 +12,8 @@ import { AboutComponent } from './about/about.component';
 import { ResumeComponent } from './resume/resume.component';
 
 import { EducationComponent } from './about/education/education.component';
+import { EmploymentComponent } from './about/employment/employment.component';
+import { ProjectsComponent } from './about/projects/projects.component';
 
 import { SharedModule } from '../shared/shared.module';
 
@@ -23,7 +25,9 @@ import { SharedModule } from '../shared/shared.module';
     AboutComponent,
     ResumeComponent,
 
-    EducationComponent
+    EducationComponent,
+    EmploymentComponent,
+    ProjectsComponent
   ],
   imports: [
     AppRoutingModule,
