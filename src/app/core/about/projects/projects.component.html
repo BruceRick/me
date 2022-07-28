@@ -1,14 +1,19 @@
 <div>
-  <div class="projects-content">
-    <img class="projects-tab-content-image" src="assets/img/projects.png">
-    <div class="projects-tab-content-text">
-      During my career I have primarily focused on iOS development using Xcode with the programming languages Objective-C and Swift. 
-      Most of these projects use either Interface Builder or SwiftUI as well as the Cocoa framework to implement iOS user interfaces.
-      These projects touched all other aspects of the Cocoa framework like various parts of the Application Kit, guestures, animations and Core Data. 
+  <div class="about-tab">
+    <img class="about-tab-image cover" src="assets/img/projects.jpg">
+    <div class="about-tab-text">
+      Currently I love and use the Swift langage with SwiftUI and Combine extensively. During my career I have primarily focused on iOS development 
+      using Xcode with the programming languages Objective-C and Swift. Most of these projects use either Interface Builder or SwiftUI as well as the 
+      Cocoa framework to implement iOS user interfaces. These projects touched all other aspects of the Cocoa framework like various parts of the 
+      Application Kit, guestures, animations and Core Data. 
       <br>
       <br>
       Within these projects I will explain which project management tool was used along with the various architectures and libraries used and of course which 
       Continous Integration system was used to deploy the app.
+      <br>
+      <br>
+      Over my 9 years as an iOS developer I used all kinds of project management tools that were essential in order to create these projects. I've used
+      JIRA, Azure and Amazon Web Services extensively to track my progress in software teams and develop pipelines to release and maintain these projects.
       <br>
       <br>
       You can also view my personal projects on my <a href="https://github.com/BruceRick">GitHub</a>.
@@ -19,17 +24,135 @@
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
-          Delphi Connect
+          Allegiant Airlines
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <p>coming soon</p>
+      <ul class="about-skills">
+        <li>
+          <a href="https://www.allegiantair.com/">
+            Allegiant Airlines
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210">
+            Objective-C
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/swift/">
+            Swift
+          </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Interface_Builder">
+            Interface Builder
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/uikit">
+            UIKit
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/xcode/">
+            Xcode
+          </a>
+        </li>
+        <li>
+          <a href="https://www.atlassian.com/software/jira">
+            JIRA
+          </a>
+        </li>
+        <li>
+          <a href="https://bitbucket.org/product">
+            Stash
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jetbrains.com/teamcity/">
+            Teamcity
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/Xcode/About-Continuous-Integration-and-Delivery-with-Xcode-Cloud">
+            Xcode Cloud
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/coredata">
+            Core Data
+          </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">
+            Representational State Transfer
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/RestKit/RestKit">
+            RestKit
+          </a>
+        </li>
+        <li>
+          <a href="https://graphql.org/">
+            GraphQL
+          </a>
+        </li>
+        <li>
+          <a href="https://cocoapods.org/">
+            CocoaPods
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/localization/">
+            Localization
+          </a>
+        </li>
+      </ul>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/allegiant.png">
+        <div class="about-tab-text">
+          Allegiant Airlines. iOS Developer on this project. The consumer app for the airline. This app allowed customers to purchase flights and vacation packages,
+          view flight itinerary, download boarding passes and access their user account for the airline. Over the course of many years this app underwent a few 
+          overhauls and redesigns. Code base was originally written in Objective-C and used interface builder and UIKit and was gradually ported to Swift. Originally 
+          app used a RESTful backend client but eventually we implemented a GraphQL client. Cocoapods were used to manage dependancies on iOS. UIKit and 
+          Interface Builder were used to construct native UI. Constraints were used extensively as Allegiant wanted to be able to support phones over a many different
+          generations.
+          <br>
+          <br>
+          This project repo was hosted on Stash (now named Bitbucket) and managed through JIRA. Teamcity was used to automate continuous delivery of the app
+          through build plans. Plans included one that ran automatically when a code review was opened and automatically ran tests to ensure features were not 
+          broken or bugs introduced during a code merge. Plan that tested migration between different versions of the app. Plan that was manually triggered to run tests, 
+          manage provisioning profiles, take screenshots, create app file and submit to the app store for testing and release. This project used JIRA to 
+          manage tasks and bugs as well as manage and measure projects progress. Time and estimates were tracked through JIRA and project health was visually 
+          shown through graphs and statistics in JIRA. 
+          <br>
+          <br>
+          Standard Apple localization system was used and eventually manual scripts were used to import and export translations to an excel file for translators.
+          This app initially used a RESTful backend and then converted to using GraphQL. RestKit was used on this project initially and eventually we moved towards
+          a more manual approach using the standard Apple networking libraries and Codable protocol to lower overhead and reduce code. When a redesign of the app 
+          was done an GraphQL backend was created and I used the Apollo iOS library to interact with the backend. This app accepted and stored customer payments 
+          and various security and encryption was implemented. Portions of this app utilized a mobile version of the Allegiant website and this required sending data
+          between a webview and the native view controller. One of the biggest overhauls of this app was the timeline functionality - the ability for users to sign
+          into their accounts and get screen that ordered there flights by times with UI card elements. This required a lot of UI work to keep UI in reusable files
+          and display in the proper format and also extensive backend changes to accomodate new data changes to support these card items.
+          <br>
+          <br>
+          I was a part of this app for many years and was part of all portions of this apps lifecycle. Designing, estimating, and implementing features, deployment
+          and release work, general maintanence cycle after a version was released and finally overhauls to the app and upgrading to new technologies. During this
+          project I flew to Las Vegas to work at the Allegiant Airlines headquarters and go over designs and expectations with the client for upcoming releases. 
+          I routinely communicated with the client when technical details were required and also demoed features and took feeback on features that were in development.
+          At times on this project I was the only iOS developer and had to constantly be very concious of the importance of this project to Allegiant and also my Company
+          financially. 
+        </div>
+      </div>
     </mat-expansion-panel>
   </mat-accordion>
   <mat-accordion>
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
-          Allegiant Airlines consumer app
+          CrewPad
         </mat-panel-title>
       </mat-expansion-panel-header>
       <p>coming soon</p>
@@ -44,5 +167,547 @@
       </mat-expansion-panel-header>
       <p>coming soon</p>
     </mat-expansion-panel>
-  </mat-accordion>     
+  </mat-accordion>   
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          REALTOR.ca - Listing Stats
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>coming soon</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Delphi Connect
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <ul class="about-skills">
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Aptiv">
+            Delphi
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210">
+            Objective-C
+          </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Interface_Builder">
+            Interface Builder
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/uikit">
+            UIKit
+          </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/HTML">
+            HTML
+          </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/CSS">
+            CSS
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/xcode/">
+            Xcode
+          </a>
+        </li>
+        <li>
+          <a href="https://www.atlassian.com/software/jira">
+            JIRA
+          </a>
+        </li>
+        <li>
+          <a href="https://bitbucket.org/product">
+            Stash
+          </a>
+        </li>
+        <li>
+          <a href="https://www.atlassian.com/software/bamboo">
+            Bamboo
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/coredata">
+            Core Data
+          </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">
+            Representational State Transfer
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/RestKit/RestKit">
+            RestKit
+          </a>
+        </li>
+        <li>
+          <a href="https://cocoapods.org/">
+            CocoaPods
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/localization/">
+            Localization
+          </a>
+        </li>
+      </ul>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/delphi.jpg">
+        <div class="about-tab-text">
+          Delphi Automotive Systems (now Aptiv). iOS Developer on this project. App that downloaded data from a backend client as well as a physical device installed in your cars OBD port 
+          to display data to a user on an iPhone device. User was also able to interact with their vehicle through an iPhone app with commands such as starting
+          your vehicle and locking/unlocking doors. App was written primarily in Objective-C with Xcode with small amounts of HTML and CSS to share code and 
+          render screens consistently between Android and iOS clients. Cocoapods were used to manage dependancies on iOS. UIKit and Interface Builder were used to
+          construct native UI. Constraints were used extensively to construct layouts that adjusted to different iPhone models.
+          <br>
+          <br>
+          This project repo was hosted on Stash (now named Bitbucket) and managed through JIRA. Bamboo was used to automate continuous delivery of the app
+          through build plans. Plans included one that ran automatically when a code review was opened and automatically ran tests to ensure features were not 
+          broken or bugs introduced during a code merge. Plan that was manually triggered to run tests, manage provisioning profiles, take screenshots,
+          create app file and submit to the app store for testing and release. This project used JIRA to manage tasks and bugs as well as manage and measure 
+          projects progress. Time and estimates were tracked through JIRA and project health was visually shown through graphs and statistics in JIRA. 
+          <br>
+          <br>
+          I localized the app using the standard iOS localization system where text was referenced by tokens and then located in a correct translation file. 
+          I used the RestKit library on this project. This was used to download data from a RESTful backend API and store in data objects and save to the device using
+          Core Data. I added migrations through Core Data in order to manage data models that changed between releases and would allow the user to seamlessly upgrade
+          the app without losing data. This app eventually implemented a theming engine that went through iterations in order to reskin this app for various 
+          vendors. 
+          <br>
+          <br>
+          Over the course of the project I worked on designing, estimating and implementing features and new screens. I worked on fixing bugs with
+          general functionality, memory, build deployments, provisioning profiles, memory, Core Data, migrations and backend integration. I worked closely with
+          the senior resources to review and learn from their code and continue to add to the quality of the code base for this app. 
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Inflight
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>coming soon</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Flydesk
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <p>coming soon</p>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Personal
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/year-1-semester-1.jpg">
+        <div class="about-tab-text">
+          Simplistic guess the word game written in C++ using the console window. My main goal for this was develop my understanding of 
+          threads and multi-threading. In this game I have a thread the handles the time decreasing and displaying it while another processes input and 
+          word selection. I also developed an understanding of how to destroy threads properly and the dangers of multi-threading.
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Game Development
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/year-1-semester-1.png">
+        <div class="about-tab-text">
+          <ul class="about-skills">
+            <li>
+              <a href="https://en.wikipedia.org/wiki/C%2B%2B">
+                C++
+              </a>
+            </li>
+            <li>
+              <a href="https://visualstudio.microsoft.com/">
+                Visual Studio
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Thread_(computing)">
+                Multi-Threading
+              </a>
+            </li>
+          </ul>
+          <br>
+          Simplistic guess the word game written in C++ using the console window. My main goal for this was develop my understanding of 
+          threads and multi-threading. In this game I have a thread the handles the time decreasing and displaying it while another processes input and 
+          word selection. I also developed an understanding of how to destroy threads properly and the dangers of multi-threading.
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/year-1-semester-2.png">
+        <div class="about-tab-text">
+          <ul class="about-skills">
+            <li>
+              <a href="https://en.wikipedia.org/wiki/C%2B%2B">
+                C++
+              </a>
+            </li>
+            <li>
+              <a href="https://visualstudio.microsoft.com/">
+                Visual Studio
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Pointer_(computer_programming)">
+                Pointers
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Function_pointer">
+                Function Pointers
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Index_notation#Multi-dimensional_arrays">
+                Multi-Dimensional Arrays
+              </a>
+            </li>
+          </ul>
+          <br>
+          Simplistic battleship game written in C++ using the console window. My main objective in this project was to further develop my understanding of 
+          pointers and multi-dimensional arrays. I tried to use as many ways to use pointers as possible in this game. This included passing by reference 
+          and by address. I also was diligent in using pointers to point to multi-dimensional arrays and accessing individual locations within 
+          the multi-dimensional array. Essentially, my game board consisted of a multi-dimensional array, and when a user fired it would check that 
+          specific location when passed a pointer to the multi-dimensional array. I also put to use the function pointers, while they were mostly redundant 
+          in this application I wanted some experience using them.
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/year-1-semester-2-2.png">
+        <div class="about-tab-text">
+          <ul class="about-skills">
+            <li>
+              <a href="https://en.wikipedia.org/wiki/C%2B%2B">
+                C++
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/C%2B%2B">
+                OpenGL
+              </a>
+            </li>
+            <li>
+              <a href="https://visualstudio.microsoft.com/">
+                Visual Studio
+              </a>
+            </li>
+          </ul>
+          <br>
+          This game was a recreation of the classic bricks or breakout game. I was given a framework to work with that had a texture renderer provided. 
+          I used the texture renderer to render textures for the ball, paddle, bricks and background. I focused on game logic such as deleting the tiles 
+          when ball collides with them and ball logic when it collides with bricks, paddle and window width and length. Game also increases difficulty 
+          as you progress through levels. My goal for this game was just to create something simple with a framework provided to help improve my abilities 
+          in C++ and develop proper practices in coding in C++;
+          <br>
+          <br>
+          <ul class="about-skills">
+            <li>
+              <a href="https://www.youtube.com/watch?v=MbRRKul_t0s">
+                Video
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/year-3-semester-1-2.png">
+        <div class="about-tab-text">
+          <ul class="about-skills">
+            <li>
+              <a href="https://en.wikipedia.org/wiki/C%2B%2B">
+                C++
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/C%2B%2B">
+                OpenGL
+              </a>
+            </li>
+            <li>
+              <a href="https://visualstudio.microsoft.com/">
+                Visual Studio
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/A*_search_algorithm">
+                A* Pathfinding
+              </a>
+            </li>
+          </ul>
+          <br>
+          This game was a simple tower defense game written in C++, however it is still incomplete. For this project I was given a core framework to work 
+          with a texture renderer using OpenGL. I focused on game logic such as implementing path finding between tiles (however it is unused at 
+          this time as enemies follow one specific path), turret placement and HUD on the right hand side. Currently the game allows you to add turrets on 
+          any tile on the screen, and begin the round with the Start Round button at which time enemies begin to follow designated path. The game does have 
+          pathfinding logic as this was what I was originally tasked with when I began the project. The pathfinding uses the A* Algorithm to process each tile 
+          and assign it a g and h score. The path with the lowest final score is presumable the shortest possible path to take to the target.
+          <br>
+          <br>
+          <ul class="about-skills">
+            <li>
+              <a href="https://www.youtube.com/watch?v=AcMbKSJ1USs">
+                Video
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/year-3-semester-2-2.png">
+        <div class="about-tab-text">
+          <ul class="about-skills">
+            <li>
+              <a href="https://en.wikipedia.org/wiki/C%2B%2B">
+                C++
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/C%2B%2B">
+                OpenGL
+              </a>
+            </li>
+            <li>
+              <a href="https://visualstudio.microsoft.com/">
+                Visual Studio
+              </a>
+            </li>
+          </ul>
+          <br>
+          This was one of the projects I was working on casually through my third year at Algonquin College. This project was built in C++/OpenGL 
+          using GLFW and GLEW libraries. I started building this around December of 2012, taking some of the lessons I had learned in Graphics Languages II 
+          and making a game out of it. In this class I had learned to build a model loader capable of reading OBJ files and combined this with a custom shader 
+          loader to render 3D models on screen. The result is a very simplistic game called rumble ball. The goal is simply to maneuver your car around and 
+          knock the ball into the other teams goal much like a soccer game.
+          <br>
+          <br>
+          <ul class="about-skills">
+            <li>
+              <a href="https://github.com/BruceRick/RumbleBall">
+                Source Code
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=OC3JiRYqVMI">
+                Video
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/year-2-semester-2-2.png">
+        <div class="about-tab-text">
+          <ul class="about-skills">
+            <li>
+              <a href="https://en.wikipedia.org/wiki/ActionScript">
+                ActionScript
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Adobe_Animate">
+                Adobe Flash
+              </a>
+            </li>
+          </ul>
+          <br>
+          I wrote this game in ActionScript3 in adobe Flash CS6. I wrote a simplistic physics system that I was really happy with giving the character 
+          fluent movements and jumps and falls. Part of the reason I created this was to build a physics system I was happy with as a lot of the flash 
+          platformers I played were had very sluggish movements.
+          <br>
+          <br>
+          <ul class="about-skills">
+            <li>
+              <a href="https://github.com/BruceRick/DystopianNinja">
+                Source Code
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=bgHNsBAaycY">
+                Video
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/year-2-semester-1.jpg">
+        <div class="about-tab-text">
+          <ul class="about-skills">
+            <li>
+              <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210">
+                Objective-C
+              </a>
+            </li>
+            <li>
+              <a href="https://developer.apple.com/xcode/">
+                Xcode
+              </a>
+            </li>
+          </ul>
+          <br>
+          I made this during second year. I built this in Xcode using C++ and Objective-C. I was given a framework that had a screen management system in 
+          place as well as an OpenGL renderer to render images. The screen management system was built in Objective-C and I had to make some tweaks in order to 
+          incorporate my splash screens. I then took care of all gameplay logic. I used this project as an introduction to iPhone development and Objective-C.
+          <br>
+          <br>
+          <ul class="about-skills">
+            <li>
+              <a href="https://www.youtube.com/watch?v=GTd0ponlR3o">
+                Video
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/year-2-semester-1-2.png">
+        <div class="about-tab-text">
+          <ul class="about-skills">
+            <li>
+              <a href="https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/">
+                C#
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Microsoft_XNA">
+                XNA
+              </a>
+            </li>
+          </ul>
+          <br>
+          This was a project I built after one year in Game Development with no previous programming experience. It was built in C# using XNA framework. 
+          I used this project to learn about events, different design patterns such as a factory pattern and just to continue developing my game programming 
+          abilities. The goal of this game was to destroy the incoming enemies and avoid them for as long as possible and achieve the highest score possible.
+          <br>
+          <br>
+          <ul class="about-skills">
+            <li>
+              <a href="https://www.youtube.com/watch?v=5KBK1Ezknf0">
+                Video
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/year-2-semester-2.png">
+        <div class="about-tab-text">
+          <ul class="about-skills">
+            <li>
+              <a href="https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/">
+                C#
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/Microsoft_XNA">
+                XNA
+              </a>
+            </li>
+          </ul>
+          <br>
+          This was a group project that was built in C# using the XNA framework. I took a simple concept from a game called bowman, which was a 2D flash game 
+          and  recreated it in 3D. Basically when you start the game it randomly generates a terrain and randomly places you and an opponent on the map. 
+          You then take turns firing arrows trying to hit your opponents. You can also switch between arrow types also. One type is used to navigate the map, 
+          where ever the shot lands is the players new location. I was not responsible for the randomly generated terrain but I took care a lot of gameplay 
+          logic as well as some basic shaders that applied a specific texture to a model. This project was also my first attempt at using an entity component 
+          system.
+          <br>
+          <br>
+          <ul class="about-skills">
+            <li>
+              <a href="https://www.youtube.com/watch?v=hoq3AIBkz-Q">
+                Video
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/year-3-semester-2.png">
+        <div class="about-tab-text">
+          <ul class="about-skills">
+            <li>
+              <a href="https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/">
+                C#
+              </a>
+            </li>
+            <li>
+              <a href="https://unity.com/">
+                Unity
+              </a>
+            </li>
+          </ul>
+          <br>
+          This was my final year group project built in Unity with C# scripting. This game was a first person shooter that was fully networked, local 
+          and over a network. I was responsible for a lot of the gameplay logic behind the mech or player. I took care of things like adding screen shake/weapon 
+          recoil, playing animations, HUD display, and spawning NPC enemies. I also learned how to use networking within a multiplayer environment. 
+          This included ensuring all player stats were synced as well as player movements and team points.
+          <br>
+          <br>
+          <ul class="about-skills">
+            <li>
+              <a href="https://www.youtube.com/watch?v=7U4R449eXAo">
+                Video
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=9Ovw6jN-eKQ">
+                Video
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <br>
+    </mat-expansion-panel>
+  </mat-accordion>
 </div>
