@@ -66,6 +66,10 @@
   font-size: 18px;
 }
 
+.mat-expansion-panel-header:focus {
+  background-color: transparent;
+}
+
 .mat-expansion-panel-body {
   padding: 0 !important;
 }

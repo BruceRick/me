@@ -321,13 +321,143 @@
         </mat-panel-title>
       </mat-expansion-panel-header>
       <div class="about-tab">
-        <img class="about-tab-image" src="assets/img/year-1-semester-1.jpg">
+        <img class="about-tab-image" src="assets/img/PKDB.png">
         <div class="about-tab-text">
-          Simplistic guess the word game written in C++ using the console window. My main goal for this was develop my understanding of 
-          threads and multi-threading. In this game I have a thread the handles the time decreasing and displaying it while another processes input and 
-          word selection. I also developed an understanding of how to destroy threads properly and the dangers of multi-threading.
+          <ul class="about-skills">
+            <li>
+              <a href="https://github.com/BruceRick/PKDB">
+                PKDB
+              </a>
+            </li>
+            <li>
+              <a href="https://developer.apple.com/swift/">
+                Swift
+              </a>
+            </li>
+            <li>
+              <a href="https://developer.apple.com/documentation/swiftui/">
+                SwiftUI
+              </a>
+            </li>
+            <li>
+              <a href="https://developer.apple.com/documentation/combine">
+                Combine
+              </a>
+            </li>
+            <li>
+              <a href="https://developer.apple.com/xcode/">
+                Xcode
+              </a>
+            </li>
+            <li>
+              <a href="https://graphql.org/">
+                GraphQL
+              </a>
+            </li>
+          </ul>
+          <br>
+          I am getting old. I still love Pokemon! I can't always remember pokemon types or abilities. I made this app to help with that. 
+          This app uses the open source PokeAPI to download up to date and continually updated data. I used Swift and SwiftUI to build a minimalistic UI
+          that downloads this data and presents it. I used Combine to organize the network calls and code. Check out the source code on my GitHub or by clicking
+          the 'PKDB' button above. 
+          <br>
+          <br>
+          This app presents a list of Pokemon, by Pokedex number, by selected Pokemon Game. It uses GraphQL to grab this data and uses the Codable protocol and Combine
+          to make this request and load into a Swift object representation of the data. This data is stored in UserDefaults. In the Pokedex view the user is able to see 
+          Name, Sprite, Type and Stats. When selecting a Pokemon the User can see all details about the Pokemon including moves, abilities, stats and locations. 
+          I also included a battle team feature where you can build your lineup for any game and add abilities and move sets. 
         </div>
       </div>
+      <br>
+      <br>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/wordle.png">
+        <div class="about-tab-text">
+          <ul class="about-skills">
+            <li>
+              <a href="https://github.com/BruceRick/Wordle">
+                Wordle
+              </a>
+            </li>
+            <li>
+              <a href="https://developer.apple.com/swift/">
+                Swift
+              </a>
+            </li>
+            <li>
+              <a href="https://developer.apple.com/documentation/swiftui/">
+                SwiftUI
+              </a>
+            </li>
+            <li>
+              <a href="https://developer.apple.com/documentation/combine">
+                Combine
+              </a>
+            </li>
+            <li>
+              <a href="https://developer.apple.com/xcode/">
+                Xcode
+              </a>
+            </li>
+          </ul>
+          <br>
+          I love Wordle! I hate only being able to do it once a day. I created this project to play Wordle as many times as you'd like everyday with some
+          basic scorekeeping. Check out the source code on my GitHub or select the 'Wordle' button above. 
+          <br>
+          <br>
+          I created this project because I love Wordle and also was curious how well suited SwiftUI would be to create a sudo-game like Wordle. It worked very well
+          and I was very happy with the results. I used SwiftUI and Combine to create and manage the gameboard and game states. I have a plain text document currently
+          with a copy of an english dictionary and I filter by all 5 letter words and select one at random. Going forward I would like to implement 2 features to
+          finish this project. I would like to be able to grab words from an API instead of having a local version of a dictionary. I would like the user to be able
+          to select the word once a round is over and use an API to display its pronunciation and meaning. 
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/website.png">
+        <div class="about-tab-text">
+          <ul class="about-skills">
+            <li>
+              <a href="https://github.com/BruceRick/me">
+                This Website!
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/HTML">
+                HTML
+              </a>
+            </li>
+            <li>
+              <a href="https://en.wikipedia.org/wiki/CSS">
+                CSS
+              </a>
+            </li>
+            <li>
+              <a href="https://code.visualstudio.com/">
+                Visual Studio Code
+              </a>
+            </li>
+            <li>
+              <a href="https://angular.io/">
+                Angular
+              </a>
+            </li>
+            <li>
+              <a href="https://pages.github.com/">
+                GitHub Pages
+              </a>
+            </li>
+          </ul>
+          <br>
+          I was in need of a simple portfolio/info website. I didn't want to use wordpress or some other web helper and wanted to try and create my own website
+          from scratch. I settled on Angular as I had heard it made Web Development a little more organized and wanted to learn something new in the process.
+          I created this Website with Angular and used Visual Studio Code. I used GitHub Pages to deploy this website at the URL you are currently at! 
+          You can have a look at the source code on GitHub or by selecting the 'This Website!' button above.
+        </div>
+      </div>
+      <br>
+      <br>
     </mat-expansion-panel>
   </mat-accordion>
   <mat-accordion>
