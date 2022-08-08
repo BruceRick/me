@@ -8,5 +8,5 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class ResumeComponent {
     title = 'Resume';
-    panelOpenState = false;
+    pdfSource =  "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf";
 }

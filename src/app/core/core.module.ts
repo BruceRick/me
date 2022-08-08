@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { BrowserAnimationsModule } from    '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 import { AppRoutingModule } from '../app-routing.module';
 
@@ -34,7 +35,8 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule,
     MatExpansionModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    PdfViewerModule
   ],
   exports: [
     AppRoutingModule,
