@@ -8,5 +8,4 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class AboutComponent {
     title = 'About';
-    panelOpenState = false;
 }
