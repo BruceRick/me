@@ -8,5 +8,5 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class ResumeComponent {
     title = 'Resume';
-    pdfSource =  '../../../assets/img/resume.pdf';
+    pdfSource =  '../../../assets/pdfs/resume.pdf';
 }
