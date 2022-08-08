@@ -23,6 +23,7 @@
     "@angular/router": "^14.0.2",
     "angular-cli-ghpages": "^0.6.0",
     "bootstrap": "^4.0.0-alpha.6",
+    "ng2-pdf-viewer": "^9.1.0",
     "ngh": "^0.2.12",
     "rxjs": "~7.5.5",
     "tslib": "^1.10.0",
