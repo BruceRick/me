@@ -155,7 +155,109 @@
           CrewPad
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <p>coming soon</p>
+      <ul class="about-skills">
+        <li>
+          <a href="https://www.aireuropa.com/ot/en/home">
+            AirEuropa
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210">
+            Objective-C
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/swift/">
+            Swift
+          </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Interface_Builder">
+            Interface Builder
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/uikit">
+            UIKit
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/xcode/">
+            Xcode
+          </a>
+        </li>
+        <li>
+          <a href="https://www.atlassian.com/software/jira">
+            JIRA
+          </a>
+        </li>
+        <li>
+          <a href="https://bitbucket.org/product">
+            Stash
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jetbrains.com/teamcity/">
+            Teamcity
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/coredata">
+            Core Data
+          </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">
+            Representational State Transfer
+          </a>
+        </li>
+        <li>
+          <a href="https://realm.io/">
+            Realm
+          </a>
+        </li>
+        <li>
+          <a href="https://swagger.io/">
+            Swagger
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ReactiveCocoa/ReactiveCocoa">
+            ReactiveCocoa
+          </a>
+        </li>
+        <li>
+          <a href="https://cocoapods.org/">
+            CocoaPods
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/localization/">
+            Localization
+          </a>
+        </li>
+      </ul>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/crewpad.jpg">
+        <div class="about-tab-text">
+          AirEuropa. iOS Developer on this project. App that used native Objective-C and Cocoa libraries with reactive programming concepts using the 
+          ReactiveCocoa library. App was an internal app intended for flight attendants to sell goods, send messages, fill out pre-flight documents and review 
+          passenger manifest with a visual display of seat map of plane.
+          <br>
+          <br>
+          This app was my first introduction to Reactive programming and the concepts of signals and bindings to bind elements together instead of using listeners,
+          delegates or override event methods. App also used Swagger and OpenAPI to automate our database models. We used the swagger documents provided by the 
+          backend to automatically create classes and network request objects based on that documents. This was a wonderful technology because to made sure that
+          the backend and client components were always in sync and took out tedious work of updating models manually for each change by the backend client.
+          <br>
+          <br>
+          App used Realm to manage and migrate database models. This was my first introduction to Realm and helped me gain a good understanding of the pros
+          and cons of Realm over the traditional CoreData database management. App also used TeamCity and Fastlane to automate software delivery. Fastlane was used to create scripts to take screenshots for app release page, test,
+          make builds and submit for QA or release on store, manage certificates and provisioning, update our localization and update our tags and build versions
+          on our project management software. We created build plans on TeamCity that ran these Fastlane scripts manually or automatically when a code review 
+          was completed and merged. 
+        </div>
+      </div>
     </mat-expansion-panel>
   </mat-accordion>
   <mat-accordion>
@@ -165,7 +267,78 @@
           ELVIS Government of Canada CBSA
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <p>coming soon</p>
+      <ul class="about-skills">
+        <li>
+          <a href="https://www.cbsa-asfc.gc.ca/menu-eng.html">
+            CBSA
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/swift/">
+            Swift
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/swiftui/">
+            SwiftUI
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/xcode/">
+            Xcode
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/pointfreeco/swift-composable-architecture">
+            Swift Composable Architecture
+          </a>
+        </li>
+        <li>
+          <a href="https://azure.microsoft.com/en-ca/">
+            Azure
+          </a>
+        </li>
+        <li>
+          <a href="https://aws.amazon.com/">
+            Amazon Web Services
+          </a>
+        </li>
+        <li>
+          <a href="https://aws.amazon.com/amplify/">
+            Amplify
+          </a>
+        </li>
+        <li>
+          <a href="https://www.swift.org/package-manager/">
+            Swift Package Manager
+          </a>
+        </li>
+      </ul>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/ecommerce.png">
+        <div class="about-tab-text">
+          CBSA division of the Government of Canada. iOS Developer on this project. This app was build in Swift using SwiftUI and we used the 
+          Swift Composable Architecture library. App was an internal app for CBSA agents to track packages being shipped into the country. 
+          Agents could use app to take pictures and scan packages and update details and perform exams and electronically log all information.
+          <br>
+          <br>
+          We used the Swift Composable Architecture to create a Model View - View Model architecture. This helped keep a wonderfully organized app that was
+          separated by feature with each feature then organized by UI logic and business logic. This architecture also was wonderful at helping us maintain
+          testability by making it easy to create test data and testing mechanisms to test all components of the app. 
+          <br>
+          <br>
+          The government was very proactive in using the best and latest technologies and that gave us the ability to develop this app entirely in SwiftUI.
+          This was my first professional experience with SwiftUI and Combine. I absolutely love both and will advocate using both technologies on any projects
+          I work on in the future. SwiftUI helped us create a reactive app that handled all cases in one place and adapt to changes or events in code in one unified
+          place. It also helped create a wonderfully responsive UI that users would expect of an iOS device. The Swift Package Manager was used in favour of 
+          CocoaPods to manage all dependancies.
+          <br>
+          <br>
+          This app used Microsoft Azure to track features, requests and project details. This app used Amazon Web Services to host the backend services as well
+          as pipelines to deploy the app. Authentication was handled through Amazons Amplify library and this was included and used to authenticate usernames
+          and passwords.
+        </div>
+      </div>
     </mat-expansion-panel>
   </mat-accordion>   
   <mat-accordion>
@@ -359,7 +532,98 @@
           Inflight
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <p>coming soon</p>
+      <ul class="about-skills">
+        <li>
+          <a href="https://www.allegiantair.com/">
+            Allegiant Airlines
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210">
+            Objective-C
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/swift/">
+            Swift
+          </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Interface_Builder">
+            Interface Builder
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/uikit">
+            UIKit
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/xcode/">
+            Xcode
+          </a>
+        </li>
+        <li>
+          <a href="https://www.atlassian.com/software/jira">
+            JIRA
+          </a>
+        </li>
+        <li>
+          <a href="https://bitbucket.org/product">
+            Stash
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jetbrains.com/teamcity/">
+            Teamcity
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/coredata">
+            Core Data
+          </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">
+            Representational State Transfer
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/RestKit/RestKit">
+            RestKit
+          </a>
+        </li>
+        <li>
+          <a href="https://cocoapods.org/">
+            CocoaPods
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/localization/">
+            Localization
+          </a>
+        </li>
+      </ul>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/inflight.png">
+        <div class="about-tab-text">
+          Allegiant Airlines. iOS Developer on this project. This app used Objective-C and Cocoa framework to build an internal app for Allegiant Airlines. 
+          This app was used by flight attendants to sell and take payments for goods and services during a flight. Sales and payment info was then synced when
+          flight landed and a internet connection was established.
+          <br>
+          <br>
+          Project used JIRA to manage and track features, request and overall project health. Git repo was stored on Stash. Using Objective-C and standard Apple 
+          frameworks app made network calls to a REST backend and saved info pertaining to flight and flight inventory to make in flight sales. App was able to
+          take payments and store payments through an external piece of hardware used to swipe credit cards. Sales were saved and then processed using a sync method
+          that was triggered when a connection was established after flight landed. We used the RestKit library to make network calls and save retrieved data to 
+          data objects. 
+          <br>
+          <br>
+          This app made extensive use of storyboards and interface builder to build reuseable UI components. Contraints were used extensively to manage the app through
+          various iPad models and sizes. App used Teamcity to create pipelines and automate the continous delivery of this app. Teamcity pipelines were triggered 
+          manually for releases and automatically for testing when code reviews were opened. 
+        </div>
+      </div>
     </mat-expansion-panel>
   </mat-accordion>
   <mat-accordion>
@@ -369,7 +633,97 @@
           Flydesk
         </mat-panel-title>
       </mat-expansion-panel-header>
-      <p>coming soon</p>
+      <ul class="about-skills">
+        <li>
+          <a href="https://www.allegiantair.com/">
+            Allegiant Airlines
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210">
+            Objective-C
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/swift/">
+            Swift
+          </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Interface_Builder">
+            Interface Builder
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/uikit">
+            UIKit
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/xcode/">
+            Xcode
+          </a>
+        </li>
+        <li>
+          <a href="https://www.atlassian.com/software/jira">
+            JIRA
+          </a>
+        </li>
+        <li>
+          <a href="https://bitbucket.org/product">
+            Stash
+          </a>
+        </li>
+        <li>
+          <a href="https://www.jetbrains.com/teamcity/">
+            Teamcity
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/coredata">
+            Core Data
+          </a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">
+            Representational State Transfer
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/RestKit/RestKit">
+            RestKit
+          </a>
+        </li>
+        <li>
+          <a href="https://cocoapods.org/">
+            CocoaPods
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/localization/">
+            Localization
+          </a>
+        </li>
+      </ul>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/flydesk.png">
+        <div class="about-tab-text">
+          Allegiant Airlines. iOS Developer on this project. This app used Objective-C and Cocoa framework to build an internal app for Allegiant Airlines. 
+          This app was used by pilots to view PDF documents for training and preflight take off. The idea behind this app was that it would replace binders
+          that contained thousands of pages and required a lot of overhead to update and maintain. 
+          <br>
+          <br>
+          Project used JIRA to manage and track features, request and overall project health. Git repo was stored on Stash. Using Objective-C and standard Apple 
+          frameworks app made network calls to a REST backend and saved info pertaining to pilots and documents pertaining to that pilot. App was able to
+          store PDFs for offline viewing. We used the RestKit library to make network calls and save retrieved data to 
+          data objects. 
+          <br>
+          <br>
+          This app made extensive use of storyboards and interface builder to build reuseable UI components. Contraints were used extensively to manage the app through
+          various iPad models and sizes. App used Teamcity to create pipelines and automate the continous delivery of this app. Teamcity pipelines were triggered 
+          manually for releases and automatically for testing when code reviews were opened. 
+        </div>
+      </div>
     </mat-expansion-panel>
   </mat-accordion>
   <mat-accordion>
