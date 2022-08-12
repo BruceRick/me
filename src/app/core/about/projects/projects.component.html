@@ -112,38 +112,35 @@
       <div class="about-tab">
         <img class="about-tab-image" src="assets/img/allegiant.png">
         <div class="about-tab-text">
-          Allegiant Airlines. iOS Developer on this project. The consumer app for the airline. This app allowed customers to purchase flights and vacation packages,
-          view flight itinerary, download boarding passes and access their user account for the airline. Over the course of many years this app underwent a few 
-          overhauls and redesigns. Code base was originally written in Objective-C and used interface builder and UIKit and was gradually ported to Swift. Originally 
-          app used a RESTful backend client but eventually we implemented a GraphQL client. Cocoapods were used to manage dependancies on iOS. UIKit and 
-          Interface Builder were used to construct native UI. Constraints were used extensively as Allegiant wanted to be able to support phones over a many different
-          generations.
+          Allegiant Airlines. iOS Developer on this project. The consumer app for the airline. This app allowed customers to purchase flights and vacation packages, 
+          view flight itineraries, download boarding passes and access their user account for the airline. Over the course of many years, this app underwent a few overhauls 
+          and redesigns. Code base was originally written in Objective-C and used interface builder and UIKit and was gradually ported to Swift. Originally app used a RESTful 
+          backend client but eventually, we implemented a GraphQL client. Cocoapods were used to manage dependencies on iOS. UIKit and Interface Builder were used to construct 
+          native UI. Constraints were used extensively as Allegiant wanted to be able to support phones over many different generations.
           <br>
           <br>
-          This project repo was hosted on Stash (now named Bitbucket) and managed through JIRA. Teamcity was used to automate continuous delivery of the app
-          through build plans. Plans included one that ran automatically when a code review was opened and automatically ran tests to ensure features were not 
-          broken or bugs introduced during a code merge. Plan that tested migration between different versions of the app. Plan that was manually triggered to run tests, 
-          manage provisioning profiles, take screenshots, create app file and submit to the app store for testing and release. This project used JIRA to 
-          manage tasks and bugs as well as manage and measure projects progress. Time and estimates were tracked through JIRA and project health was visually 
-          shown through graphs and statistics in JIRA. 
+          This project repo was hosted on Stash (now named Bitbucket) and managed through JIRA. Teamcity was used to automate the continuous delivery of the app 
+          through build plans. Plans included one that ran automatically when a code review was opened and automatically ran tests to ensure features were not broken or 
+          bugs introduced during a code merge. Plans that tested migration between different versions of the app. Plans that was manually triggered to run tests, manage
+          provisioning profiles, take screenshots, create app file and submit them to the app store for testing and release. This project used JIRA to manage tasks and bugs 
+          as well as manage and measure project progress. Time and estimates were tracked through JIRA and project health was visually shown through graphs and statistics in JIRA.
           <br>
           <br>
-          Standard Apple localization system was used and eventually manual scripts were used to import and export translations to an excel file for translators.
-          This app initially used a RESTful backend and then converted to using GraphQL. RestKit was used on this project initially and eventually we moved towards
-          a more manual approach using the standard Apple networking libraries and Codable protocol to lower overhead and reduce code. When a redesign of the app 
-          was done an GraphQL backend was created and I used the Apollo iOS library to interact with the backend. This app accepted and stored customer payments 
-          and various security and encryption was implemented. Portions of this app utilized a mobile version of the Allegiant website and this required sending data
-          between a webview and the native view controller. One of the biggest overhauls of this app was the timeline functionality - the ability for users to sign
-          into their accounts and get screen that ordered there flights by times with UI card elements. This required a lot of UI work to keep UI in reusable files
-          and display in the proper format and also extensive backend changes to accomodate new data changes to support these card items.
+          Standard Apple localization system was used and eventually manual scripts were used to import and export translations to an excel file for translators. This app 
+          initially used a RESTful backend and then converted to using GraphQL. RestKit was used on this project initially and eventually we moved towards a more manual 
+          approach using the standard Apple networking libraries and Codable protocol to lower overhead and reduce code. When a redesign of the app was done a GraphQL backend was 
+          created and I used the Apollo iOS library to interact with the backend. This app accepted and stored customer payments and various security and encryption was implemented. 
+          Portions of this app utilized a mobile version of the Allegiant website and this required sending data between a web view and the native view controller. One of the biggest 
+          overhauls of this app was the timeline functionality - the ability for users to sign into their accounts and get a screen that ordered their flights by times with UI card 
+          elements. This required a lot of UI work to keep UI in reusable files and display in the proper format and also extensive backend changes to accommodate new data changes to 
+          support these card items.
           <br>
           <br>
-          I was a part of this app for many years and was part of all portions of this apps lifecycle. Designing, estimating, and implementing features, deployment
-          and release work, general maintanence cycle after a version was released and finally overhauls to the app and upgrading to new technologies. During this
-          project I flew to Las Vegas to work at the Allegiant Airlines headquarters and go over designs and expectations with the client for upcoming releases. 
-          I routinely communicated with the client when technical details were required and also demoed features and took feeback on features that were in development.
-          At times on this project I was the only iOS developer and had to constantly be very concious of the importance of this project to Allegiant and also my Company
-          financially. 
+          I was a part of this app for many years and was part of all portions of the lifecycle of this app. Designing, estimating and implementing features, deployment and release 
+          work, general maintenance cycle after a version was released and finally overhauling the app and upgrading to new technologies. During this project, I flew to Las Vegas 
+          to work at the Allegiant Airlines headquarters and go over designs and expectations with the client for upcoming releases. I routinely communicated with the client when 
+          technical details were required and also demoed features and took feedback on features that were in development. At times on this project, I was the only iOS developer and 
+          had to constantly be very conscious of the importance of this project to Allegiant and also to my company financially.
         </div>
       </div>
     </mat-expansion-panel>
@@ -240,22 +237,22 @@
       <div class="about-tab">
         <img class="about-tab-image" src="assets/img/crewpad.jpg">
         <div class="about-tab-text">
-          AirEuropa. iOS Developer on this project. App that used native Objective-C and Cocoa libraries with reactive programming concepts using the 
-          ReactiveCocoa library. App was an internal app intended for flight attendants to sell goods, send messages, fill out pre-flight documents and review 
-          passenger manifest with a visual display of seat map of plane.
+          AirEuropa. iOS Developer on this project. The app used native Objective-C and Cocoa libraries with reactive programming concepts using the ReactiveCocoa library. 
+          The app was an internal app intended for flight attendants to sell goods, send messages, fill out pre-flight documents and review passenger manifest with a visual 
+          display of the seat map of plane.
           <br>
           <br>
-          This app was my first introduction to Reactive programming and the concepts of signals and bindings to bind elements together instead of using listeners,
-          delegates or override event methods. App also used Swagger and OpenAPI to automate our database models. We used the swagger documents provided by the 
-          backend to automatically create classes and network request objects based on that documents. This was a wonderful technology because to made sure that
-          the backend and client components were always in sync and took out tedious work of updating models manually for each change by the backend client.
+          This app was my first introduction to Reactive programming and the concepts of signals and bindings to bind elements together instead of using listeners, delegates 
+          or override event methods. App also used Swagger and OpenAPI to automate our database models. We used the swagger documents provided by the backend to automatically 
+          create classes and network request objects based on that documents. This was a wonderful technology because it made sure that the backend and client components were 
+          always in sync and took out tedious work of updating models manually for each change by the backend client.
           <br>
           <br>
-          App used Realm to manage and migrate database models. This was my first introduction to Realm and helped me gain a good understanding of the pros
-          and cons of Realm over the traditional CoreData database management. App also used TeamCity and Fastlane to automate software delivery. Fastlane was used to create scripts to take screenshots for app release page, test,
-          make builds and submit for QA or release on store, manage certificates and provisioning, update our localization and update our tags and build versions
-          on our project management software. We created build plans on TeamCity that ran these Fastlane scripts manually or automatically when a code review 
-          was completed and merged. 
+          App used Realm to manage and migrate database models. This was my first introduction to Realm and helped me gain a good understanding of the pros and cons of Realm
+          over the traditional CoreData database management. App also used TeamCity and Fastlane to automate software delivery. Fastlane was used to create scripts to take 
+          screenshots for the app release page, test, make builds and submit for QA or release on the store, manage certificates and provisioning, update our localization and 
+          update our tags and build versions on our project management software. We created build plans on TeamCity that ran these Fastlane scripts manually or automatically 
+          when a code review was completed and merged.
         </div>
       </div>
     </mat-expansion-panel>
@@ -317,25 +314,25 @@
       <div class="about-tab">
         <img class="about-tab-image" src="assets/img/ecommerce.png">
         <div class="about-tab-text">
-          CBSA division of the Government of Canada. iOS Developer on this project. This app was build in Swift using SwiftUI and we used the 
-          Swift Composable Architecture library. App was an internal app for CBSA agents to track packages being shipped into the country. 
-          Agents could use app to take pictures and scan packages and update details and perform exams and electronically log all information.
+          CBSA division of the Government of Canada. iOS Developer on this project. This app was built in Swift using SwiftUI and we used the Swift Composable 
+          Architecture library. The app was an internal app for CBSA agents to track packages being shipped into the country. Agents could use the app to take 
+          pictures and scan packages and update details and perform exams and electronically log all information.
           <br>
           <br>
-          We used the Swift Composable Architecture to create a Model View - View Model architecture. This helped keep a wonderfully organized app that was
-          separated by feature with each feature then organized by UI logic and business logic. This architecture also was wonderful at helping us maintain
-          testability by making it easy to create test data and testing mechanisms to test all components of the app. 
+          We used the Swift Composable Architecture to create a Model View - View Model architecture. This helped keep a wonderfully organized app that was 
+          separated by feature with each feature then organized by UI logic and business logic. This architecture also was wonderful at helping us maintain 
+          testability by making it easy to create test data and testing mechanisms to test all components of the app.
           <br>
           <br>
-          The government was very proactive in using the best and latest technologies and that gave us the ability to develop this app entirely in SwiftUI.
-          This was my first professional experience with SwiftUI and Combine. I absolutely love both and will advocate using both technologies on any projects
-          I work on in the future. SwiftUI helped us create a reactive app that handled all cases in one place and adapt to changes or events in code in one unified
-          place. It also helped create a wonderfully responsive UI that users would expect of an iOS device. The Swift Package Manager was used in favour of 
-          CocoaPods to manage all dependancies.
+          The government was very proactive in using the best and latest technologies and that gave us the ability to develop this app entirely in SwiftUI. 
+          This was my first professional experience with SwiftUI and Combine. I absolutely love both and will advocate using both technologies on any projects 
+          I work on in the future. SwiftUI helped us create a reactive app that handled all cases in one place and adapt to changes or events in code in one 
+          unified place. It also helped create a wonderfully responsive UI that users would expect of an iOS device. The Swift Package Manager was used in favour 
+          of CocoaPods to manage all dependencies.
           <br>
           <br>
-          This app used Microsoft Azure to track features, requests and project details. This app used Amazon Web Services to host the backend services as well
-          as pipelines to deploy the app. Authentication was handled through Amazons Amplify library and this was included and used to authenticate usernames
+          This app used Microsoft Azure to track features, requests and project details. This app used Amazon Web Services to host the backend services as well 
+          as pipelines to deploy the app. Authentication was handled through Amazon's Amplify library and this was included and used to authenticate usernames 
           and passwords.
         </div>
       </div>
@@ -388,24 +385,23 @@
       <div class="about-tab">
         <img class="about-tab-image" src="assets/img/realtor.png">
         <div class="about-tab-text">
-          REALTOR.ca. iOS Developer on this project. App that used the React Native framework to work seemlessly across iOS and Android platforms.
-          Using React Native and it's concepts of reducers web style principles app downloaded and stored listings and user info to display to real estate 
-          agents. 
+          REALTOR.ca. iOS Developer on this project. An app that used the React Native framework to work seamlessly across iOS and Android platforms. Using React Native 
+          and its concepts of reducers web style principles app downloaded and stored listings and user info to display to real estate agents.
           <br>
           <br>
-          This project was managed through Microsoft Azure DevOps. Azure pipelines were used for continuous delievery of the app. Azure Boards were used to create,
-          estimate, and evaluate timelines for the entire project. Repository was hosted on Azure Repos as well. This was my first interaction with Azure and the added
-          security that came with it. Had to use authenticator on a mobile device to log in and update SSH keys and tokens periodically.
+          This project was managed through Microsoft Azure DevOps. Azure pipelines were used for continuous delivery of the app. Azure Boards were used to create, estimate, 
+          and evaluate timelines for the entire project. The repository was hosted on Azure Repos as well. This was my first interaction with Azure and the added security 
+          that came with it. Had to use an authenticator on a mobile device to log in and update SSH keys and tokens periodically.
           <br>
           <br>
-          I specifically was asked to help maintain some existing features and also create a new feature. I was specifically in charge of introducing the concept 
-          of multiple users and being apart of separate real estate boards. Originally the app had one user log in and downloaded and viewed listings specific to that user. 
-          I had to redesign the workflow to accomidate the idea that multiple users could log in or be apart of two different real estate boards. 
-          This meant adding the ability to save multiple users and real estate associations to the device and giving the user the ability to flip between accounts or
-          real estate boards and updating the list of available listings. 
+          I was asked to help maintain some existing features and also create a new feature. I was specifically in charge of introducing the concept of multiple users and 
+          being a part of separate real estate boards. Originally the app had one user login and downloaded and viewed listings specific to that user. I had to redesign 
+          the workflow to accommodate the idea that multiple users could log in or be a part of two different real estate boards. This meant adding the ability to save 
+          multiple users and real estate associations to the device and giving the user the ability to flip between accounts or real estate boards and update the list of 
+          available listings.
           <br>
           <br>
-          On this app I got to specifically learn about React Native and Azure. I got to experience the pros and cons of React Native
+          On this app, I got to learn about React Native and Azure. I got to experience the pros and cons of React Native vs using a native technology.
         </div>
       </div>
     </mat-expansion-panel>
