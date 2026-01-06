@@ -5,6 +5,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     templateUrl: './about.component.html',
     styleUrls: ['./about.component.css'],
     encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class AboutComponent {
     title = 'About';

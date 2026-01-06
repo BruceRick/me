@@ -5,6 +5,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     templateUrl: './projects.component.html',
     styleUrls: ['./projects.component.css'],
     encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class ProjectsComponent {
     title = 'Projects';

@@ -2,7 +2,7 @@
     height: 100%;
     min-height: 100vh;
     width: 100vw;
-    background: url('../../../assets/img/about-background.jpg') 100% 100% no-repeat;
+    background: url('../../../assets/img/about-background.JPG') 100% 100% no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -27,24 +27,33 @@
     border-width: 0px 1px 1px 1px;
 }
 
-.mat-tab-labels {
+.mat-mdc-tab-labels {
     caret-color: transparent;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.mat-tab-label {
+.mat-mdc-tab-label {
     opacity: 1 !important;
     padding: 0 15px !important;
 }
 
-.mat-tab-label-content {
-    font-family: 'Lato', sans-serif;
-    color: white;
-    opacity: 1;
+.mat-mdc-tab-group.mat-mdc-tab-group-stretch-tabs>.mat-mdc-tab-header .mat-mdc-tab {
+  flex-grow: 0 !important;
+  min-width: 160px;
 }
 
-.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
-    background-color: white;
+.mdc-tab__text-label {
+    font-family: 'Lato', sans-serif !important;
+    color: white !important;
+    opacity: 1;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    letter-spacing: normal !important;
+    -webkit-font-smoothing: auto !important;
+}
+
+.mat-mdc-tab .mdc-tab-indicator__content--underline {
+    border-color: white !important;
 }
 
 .mat-accordion {
@@ -55,14 +64,14 @@
   background: none !important;
   background-color: transparent !important;
   caret-color: transparent;
-  color: white;
+  color: white !important;
   border-top-right-radius: 0px !important;
   border-top-left-radius: 0px !important;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .mat-expansion-panel-header-title, .mat-expansion-panel-header-description, .mat-expansion-indicator::after {
-  color: white;
+  color: white !important;
   font-family: 'Lato', sans-serif;
   font-size: 18px;
 }
