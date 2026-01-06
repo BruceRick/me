@@ -24,6 +24,233 @@
     <mat-expansion-panel>
       <mat-expansion-panel-header>
         <mat-panel-title>
+          theScore Bet and various reskins
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <ul class="about-skills">
+        <li>
+          <a href="https://www.thescore.com/">
+            theScore
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/swift/">
+            Swift
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/swiftui/">
+            SwiftUI
+          </a>
+        </li>
+        <li>
+          <a href="https://www.figma.com/">
+            Figma
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/pointfreeco/swift-dependencies">
+            Dependency Injection
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/pointfreeco/swift-snapshot-testing">
+            Snapshot Testing
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210">
+            Objective-C
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/uikit">
+            UIKit
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/xcode/">
+            Xcode
+          </a>
+        </li>
+        <li>
+          <a href="https://www.atlassian.com/software/jira">
+            JIRA
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/features/actions">
+            GitHub Actions
+          </a>
+        </li>
+        <li>
+          <a href="https://graphql.org/">
+            GraphQL
+          </a>
+        </li>
+        <li>
+          <a href="https://docs.swift.org/swiftpm/documentation/packagemanagerdocs/">
+            Swift Package Manager
+          </a>
+        </li>
+        <li>
+          <a href="https://cocoapods.org/">
+            CocoaPods
+          </a>
+        </li>
+      </ul>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/theScoreBet.png">
+        <div class="about-tab-text">
+          theScore Betting App. This app allowed uses to bet on sporting events all across the globe. I worked on the Design System creating iOS UI Elements to be used mainly on the betting app but also across all company apps. We heavily relied on the product Figma for design as well as code and image generation. The purpose of the Design System team was to create reusable components that all
+          company apps would use. The benefit to this was consistency, no duplication in UI elements, ability to update images across multiple screens and apps quickly and the ability to rebrand the
+          betting app for various companies such as Barstool and ESPN.
+          <br>
+          <br>
+          This project repo was hosted on GitHub and managed through JIRA. GitHub actions were used to automate the continuous delivery of the app 
+          through build plans. Plans included one that ran automatically when a code review was opened and automatically ran tests to ensure features were not broken or 
+          bugs introduced during a code merge. Plans that tested migration between different versions of the app. Plans that was manually triggered to run tests, take screenshots, 
+          create app file and submit them to the app store for testing and release. This project used JIRA to manage tasks and bugs as well as manage and measure project progress. 
+          We used GitHub actions to export all images from Figma every week as well. This meant a designer could update a template in a Figma design and this would automatically 
+          populate any image changes to the code base and all apps.
+          <br>
+          <br>
+          I created all kinds of components from Chips / Badges / Bet Selectors / Carousels and various other components. Creating a Design System UI element was more complex than usual. Creating the
+          component involved intense collaboration with our designers to start, followed by creating a system that allowed for the component to be used in both UIKit as well as SwiftUI, with concurrency or
+          combine. Creating animations was an entire development step as we had to ensure these animations could be played in different UI frameworks, were testable and could be disabled for tests when
+          needed. Usually follow up support was required when a feature team was using these UI elements - I would join a team and work closely with a developer to ensure the component was used correctly.
+          <br>
+          <br>
+          All our components used Figma code support - this meant that any designer using these components could set values in the Figma client and this would autogenerate code snippets to show how to
+          reproduce the element in code. This required some code Figma files on the dev side to create mappings between Figma web values and what those values correlated to in code. I had to maintain 
+          strict documentation to again allow for devs from feature teams to understand how to use the components on their new features. This included in code documentation as well as supporting a
+          documentation website we maintained. This team used Figma to manage all our image assets - the idea being that all images were created by designers and then exported to our code base with every
+          release. This was for multiple reasons - team and player assets, sports logos and player headshots could be updated through Figma and this would update all apps and web pages. Figma image support
+          also made updating icons or branding much easier - a design could implement this through Figma rather than require changes from our developers on all platforms. Finally Figma support made
+          reskinning the app much easier to support. We were asked to rebrand the app for multiple companies like BarStool and ESPN, the bulk of this could be done via a new Figma page with all colours
+          and images. This would auto generate a theme we could apply when creating the app store file.
+          <br>
+          <br>
+          I worked with 100s of developers at theScore and as a result testing was a necessity. We had GitHub actions that ensured all code files hit 90% code coverage, code could not
+          be merged unless it met this testing threshold. One unique part of this app that was new to me was the extensive snapshot image testing this project used. Our code was always 
+          re-used, updated and used on multiple pages, so this created a problem where UI could be changed accidentally. To combat this, every UI component had to have a snapshot image test. 
+          I would create the UI element in all its possible states and record it in the form of a .png image. Every subsequent run of our tests, this image would be recreated by the tests and 
+          ensure there were no differences between the new snapshots created by the modified code and the existing image. This worked so incredibly well to ensure all UI was maintained and 
+          never unintentionally changed. This is something I will use for all my existing projects going forward.
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          theScore News App
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <ul class="about-skills">
+        <li>
+          <a href="https://www.thescore.com/">
+            theScore
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/swift/">
+            Swift
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/swiftui/">
+            SwiftUI
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/pointfreeco/swift-dependencies">
+            Dependency Injection
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/pointfreeco/swift-snapshot-testing">
+            Snapshot Testing
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html#//apple_ref/doc/uid/TP40011210">
+            Objective-C
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/documentation/uikit">
+            UIKit
+          </a>
+        </li>
+        <li>
+          <a href="https://developer.apple.com/xcode/">
+            Xcode
+          </a>
+        </li>
+        <li>
+          <a href="https://www.atlassian.com/software/jira">
+            JIRA
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/features/actions">
+            GitHub Actions
+          </a>
+        </li>
+        <li>
+          <a href="https://graphql.org/">
+            GraphQL
+          </a>
+        </li>
+        <li>
+          <a href="https://docs.swift.org/swiftpm/documentation/packagemanagerdocs/">
+            Swift Package Manager
+          </a>
+        </li>
+        <li>
+          <a href="https://cocoapods.org/">
+            CocoaPods
+          </a>
+        </li>
+      </ul>
+      <div class="about-tab">
+        <img class="about-tab-image" src="assets/img/theScore.png">
+        <div class="about-tab-text">
+          theScore News App. iOS Developer on this project. This app allowed users to follow all sporting events from all over the globe. Features included personalized login accounts 
+          allowing you to favourite teams / players / events, reacting and commenting on news items similar to Instagram or Facebook. While working on this app I redesigned the look 
+          of the news feed 'cards', added the ability to add reactions and added the clips feature which pulled videos from social media related to the sporting event (such as goals or 
+          specific plays) and added them under the matchup page for an event. Code base was originally written using Swift and UIKit and using the IGListKit a framework to manage 
+          lists and create sections to reuse cells to create the card views. Eventually I helped with the on-going conversion to complete SwiftUI, creating a system to create cards in 
+          SwiftUI and show them in UIKit CollectionViews. This app uses both Rest services as well as GraphQL to manage network requests. This app had an admin component where our editorial team could create news stories and then push them to the apps via REST calls.
+          <br>
+          <br>
+          This project repo was hosted on GitHub and managed through JIRA. GitHub actions were used to automate the continuous delivery of the app 
+          through build plans. Plans included one that ran automatically when a code review was opened and automatically ran tests to ensure features were not broken or 
+          bugs introduced during a code merge. Plans that tested migration between different versions of the app. Plans that was manually triggered to run tests, take screenshots, 
+          create app file and submit them to the app store for testing and release. This project used JIRA to manage tasks and bugs as well as manage and measure project progress.
+          <br>
+          <br>
+          I heavily used dependency injection on this project. We used pointfreeco's dependency injection system. When the release version of the app ran, we would set up a 'live' version 
+          of any dependency we needed such as a rest client or even something basic like a UUID generator. The benefit of this is that we could overwrite these dependencies in tests to ensure
+          we didn't do things like make actual network calls during testing. This was also used in testing to recreate all code paths and permutations. During a test case we could create our own mock version of the dependency to fit whatever needs we wanted.
+          <br>
+          <br>
+          I worked with 100s of developers at theScore and as a result testing was a necessity. We had GitHub actions that ensured all code files hit 90% code coverage, code could not
+          be merged unless it met this testing threshold. One unique part of this app that was new to me was the extensive snapshot image testing this project used. Our code was always 
+          re-used, updated and used on multiple pages, so this created a problem where UI could be changed accidentally. To combat this, every UI component had to have a snapshot image test. 
+          I would create the UI element in all its possible states and record it in the form of a .png image. Every subsequent run of our tests, this image would be recreated by the tests and 
+          ensure there were no differences between the new snapshots created by the modified code and the existing image. This worked so incredibly well to ensure all UI was maintained and 
+          never unintentionally changed. This is something I will use for all my existing projects going forward.
+        </div>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
           Allegiant Airlines
         </mat-panel-title>
       </mat-expansion-panel-header>
